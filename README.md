@@ -132,11 +132,25 @@ This project gave me a better understanding of how network scanning can be used 
 
 This project was completed in a controlled, isolated lab environment using a deliberately vulnerable Metasploitable system for cybersecurity training purposes. No unauthorized systems were scanned or tested.
 
-## 8. Screenshot/Evidence
+## 8. Screenshots/Evidence
 
 The following screenshots show the Nmap commands and results from the controlled Metasploitable lab assessment.
 
-### Connectivity Test 
+### Connectivity Test
 
 The screenshot below shows the successful ping test confirming that the Metasploitable system was reachable from Kali Linux.
+
+<img width="359" height="122" alt="Nmap Connectivity Test" src="https://github.com/user-attachments/assets/042283e7-f1f9-420e-b3b7-82602602f40f" />
+
+### Nmap Port Scan
+
+The screenshot below shows the basic Nmap scan identifying the open TCP ports on the Metasploitable system.
+
+<img width="449" height="288" alt="Nmap Port Scan" src="https://github.com/user-attachments/assets/c7d0ac73-d7bf-459d-9321-acad721207ca" />
+
+### Nmap Service and Version Detection
+
+The screenshot below shows the Nmap service and version scan identifying the services and software versions running on the Metasploitable system.
+
+<img width="671" height="289" alt="Nmap Service and Version Detection" src="https://github.com/user-attachments/assets/459431da-156d-441a-8bd0-2a8fda73ce6d" />
 
