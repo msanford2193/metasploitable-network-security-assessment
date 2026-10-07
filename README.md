@@ -9,7 +9,7 @@ The goal of this project was to identify exposed network services, determine the
 
 ## Lab Environment
 
-- **Attacker/Analysis System:** Kali Linux
+- **Analysis System:** Kali Linux
 - **Target System:** Metasploitable
 - **Target IP Address:** 10.0.2.8
 - **Primary Tool:** Nmap
@@ -23,7 +23,7 @@ Before performing the network scan, I tested connectivity to the Metasploitable 
 
 ### Command
 
-```bash 
+```bash
 ping -c 4 10.0.2.8
 ```
 
@@ -62,7 +62,7 @@ The open ports showed that the system was running several network services that 
 | **22/tcp** | SSH | Provides remote access and should be properly secured and restricted. |
 | **23/tcp** | Telnet | Sends information without encryption and should generally be replaced with SSH. |
 | **80/tcp** | HTTP | Web traffic is not encrypted and should use HTTPS when sensitive information is involved. |
-| **139/tcp** | NetBIOS | Can expose network file-sharing services and should be restricted when not needed.|
+| **139/tcp** | NetBIOS | Can expose network file-sharing services and should be restricted when not needed. |
 | **445/tcp** | SMB | File and printer sharing can be targeted if improperly secured or exposed. |
 | **1524/tcp** | Bindshell / Root Shell | Provides a root-level remote shell and represents a serious security risk if exposed. |
 | **2049/tcp** | NFS | Network file sharing can expose files if access controls are weak. |
@@ -93,8 +93,7 @@ The service and version scan identified several services and the software versio
 | **111/tcp** | RPC | rpcbind 2 |
 | **1524/tcp** | Bindshell | Metasploitable root shell |
 
-
-Several of the detected services are running older software versions that may contain known security weaknesses.
+Several of the detected services are running older software versions that may contain known security weaknesses. Identifying the software and versions helps a security analyst determine which services may need to be updated, secured, or disabled.
 
 ## 4. Key Security Finding: Port 1524/tcp Root Bindshell
 
@@ -124,15 +123,15 @@ Based on the Nmap scan results, several steps could be taken to improve the secu
 - **Investigate the root bindshell:** The bindshell on port 1524 should be disabled and investigated because it provides a root-level shell.
 - **Monitor network services:** Systems should be monitored for unexpected open ports, services, or remote connections.
 
-## 6. What I Learned 
+## 6. What I Learned
 
-This project gave me a better understanding of how network scanning can be used as a tool to identify potential security risks on a system. I learned how to use Nmap to check whether a system is reachable, identify open ports, and determine what services and software versions are running. One of my biggest takeaways was understanding that every unnecessary open service can create another potential entry point for an attacker. Finding that the root bindshell on port 1524 was vulnerable and could allow an attacker to gain a high level of control over the system and make significant changes made the risk much clearer to me. Completing this lab gave me more experience looking at scan results from a defensive perspective and thinking about how services can be secured or removed to reduce risk.
+This project gave me a better understanding of how network scanning can be used as a tool to identify potential security risks on a system. I learned how to use Nmap to check whether a system is reachable, identify open ports, and determine what services and software versions are running. One of my biggest takeaways was understanding that every unnecessary open service can create another potential entry point for an attacker. Finding that port 1524 was running a root bindshell and could allow an attacker to gain a high level of control over the system made the risk much clearer to me. Completing this lab gave me more experience looking at scan results from a defensive perspective and thinking about how services can be secured or removed to reduce risk.
 
 ## 7. Disclaimer
 
 This project was completed in a controlled, isolated lab environment using a deliberately vulnerable Metasploitable system for cybersecurity training purposes. No unauthorized systems were scanned or tested.
 
-## 8. Screenshots/Evidence
+## 8. Screenshots / Evidence
 
 The following screenshots show the Nmap commands and results from the controlled Metasploitable lab assessment.
 
