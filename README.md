@@ -17,6 +17,13 @@ The goal of this project was to identify exposed network services, determine the
 
 The assessment was performed against a deliberately vulnerable system in a controlled lab environment for cybersecurity training purposes.
 
+## Tools Used
+
+- **Kali Linux** — Linux-based security analysis environment
+- **Nmap** — Network scanning and service/version detection
+- **Metasploitable** — Deliberately vulnerable target system used for the controlled lab assessment
+- **ICMP/Ping** — Used to verify connectivity to the target system
+
 ## 1. Connectivity Test
 
 Before performing the network scan, I tested connectivity to the Metasploitable system using ICMP.
