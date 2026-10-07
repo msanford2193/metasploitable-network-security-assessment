@@ -139,17 +139,16 @@ The following screenshots show the Nmap commands and results from the controlled
 
 The screenshot below shows the successful ping test confirming that the Metasploitable system was reachable from Kali Linux.
 
-<img width="359" height="122" alt="Nmap Connectivity Test" src="https://github.com/user-attachments/assets/042283e7-f1f9-420e-b3b7-82602602f40f" />
+![Nmap Connectivity Test](screenshots/Nmap%20Connectivity%20Test.png)
 
 ### Nmap Port Scan
 
 The screenshot below shows the basic Nmap scan identifying the open TCP ports on the Metasploitable system.
 
-<img width="449" height="288" alt="Nmap Port Scan" src="https://github.com/user-attachments/assets/c7d0ac73-d7bf-459d-9321-acad721207ca" />
+![Nmap Port Scan](screenshots/Nmap%20Port%20Scan.png)
 
 ### Nmap Service and Version Detection
 
 The screenshot below shows the Nmap service and version scan identifying the services and software versions running on the Metasploitable system.
 
-<img width="671" height="289" alt="Nmap Service and Version Detection" src="https://github.com/user-attachments/assets/459431da-156d-441a-8bd0-2a8fda73ce6d" />
-
+![Nmap Service and Version Detection](screenshots/Nmap%20Service%20and%20Version%20Detection.png)
