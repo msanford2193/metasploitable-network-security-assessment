@@ -24,6 +24,17 @@ The assessment was performed against a deliberately vulnerable system in a contr
 - **Metasploitable** — Deliberately vulnerable target system used for the controlled lab assessment
 - **ICMP/Ping** — Used to verify connectivity to the target system
 
+## Skills Demonstrated
+
+- Network connectivity testing
+- Network scanning with Nmap
+- Identifying open ports and network services
+- Service and version detection
+- Basic security risk identification
+- Reviewing network exposure
+- Recommending basic security controls
+- Documenting security assessment findings
+
 ## 1. Connectivity Test
 
 Before performing the network scan, I tested connectivity to the Metasploitable system using ICMP.
